@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+  <body>
+    <style>
+        body {
+          font-family: sans-serif;
+          margin: 0;
+        }
+      
+        .header {
+          background-color: rgb(245, 104, 245);
+          padding: 5px;
+          text-align: center;
+        }
+        .sticky-nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        position: sticky; /* Propiedad para hacer sticky */
+        top: 0; /* Se queda pegada en la parte superior */
+        z-index: 1000; /* Asegura que esté por encima del contenido */
+       }
+
+        .sticky-nav a {
+         color: white;
+         text-decoration: none;
+         margin: 0 10px;
+         }
+
+        .sticky-nav a:hover {
+         text-decoration: underline;
+        }
+
+      
+        .content {
+          padding: 20px;
+          text-align: center;
+         
+        }
+
+        .caja-bloque { background-color: rgb(150, 154, 155); 
+            margin: 20px; /* Margin en todos los lados */ 
+            padding: 100px; 
+            width: 80%; /* Aunque tenga ancho, ocupa su propia linea */
+            color: aliceblue;
+            border-radius: 50px;
+            
+            
+        }
+        p {
+            color: rgb(20, 16, 21);
+     }
+         li {
+            color:black 
+        }
+        .contenedor-align-content {
+          display: flex;
+          flex-wrap: wrap; /* Cambia a 'nowrap' para ver la diferencia */
+          align-content: center;
+          background-color: #383637;
+          height: 35vh; /* Altura completa de la ventana */
+        }
+        .item {
+          background-color: rgb(245, 104, 245);
+          color: rgb(0, 0, 0);
+          padding: 20px;
+          margin: 25px;
+          text-align: center;
+        }
+        .text-centrado {
+                   text-align: center;
+        }
+        .texto-grande {
+             font-size: 24px;
+        }
+        
+              
+      </style>
+      </head>
+      <body>
+       
+
+      
+        <div class="header">
+          <div class="Logo">
+            <img src="https://lgoenaga.github.io/edutechcesde/img/logo-cesde-blanco-sin-fondov2.png">
+          </div>
+          <p class="texto-grande"><strong>Bienvendio a nuestro sitio web. Date la oportunidad a un nuevo Futuro</strong></p>
+        </div>
+      
+        <nav class="sticky-nav"> 
+    <div class="login-container">
+      
+        <form class="login-form">
+            <h2>Iniciar sesión</h2>
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="Usuario" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn-submit">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>
