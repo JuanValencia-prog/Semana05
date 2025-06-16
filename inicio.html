@@ -6,34 +6,150 @@
     <title>Document</title>
 </head>
 <body>
- 
-    <nav>
-        <ul>
-            <a href="./inicio.html">Inicio</a>
-            <a href="./Servicio.html">Servicio</a>
-            <a href="./blog.html">Blog</a>
-            <a href="./contacto.html">Contacto</a>
-            <a href="./ubicacion.html">Ubicacion</a>
+    <style>
+        body {
+          font-family: sans-serif;
+          margin: 0;
+        }
+      
+        .header {
+          background-color: rgb(245, 104, 245);
+          padding: 5px;
+          text-align: center;
+        }
+        .sticky-nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        position: sticky; /* Propiedad para hacer sticky */
+        top: 0; /* Se queda pegada en la parte superior */
+        z-index: 1000; /* Asegura que esté por encima del contenido */
+       }
+
+        .sticky-nav a {
+         color: white;
+         text-decoration: none;
+         margin: 0 10px;
+         }
+
+        .sticky-nav a:hover {
+         text-decoration: underline;
+        }
+
+      
+        .content {
+          padding: 20px;
+          text-align: center;
+         
+        }
+
+        .caja-bloque { background-color: rgb(150, 154, 155); 
+            margin: 20px; /* Margin en todos los lados */ 
+            padding: 100px; 
+            width: 80%; /* Aunque tenga ancho, ocupa su propia linea */
+            color: aliceblue;
+            border-radius: 50px;
             
-        </ul>
-      </nav>
-    
-    <h2> Bienvenido al Sistema de Préstamo de Equipos de Cómputo </h2>
+            
+        }
+        p {
+            color: rgb(20, 16, 21);
+     }
+         li {
+            color:black 
+        }
+        .contenedor-align-content {
+          display: flex;
+          flex-wrap: wrap; /* Cambia a 'nowrap' para ver la diferencia */
+          align-content: center;
+          background-color: #383637;
+          height: 35vh; /* Altura completa de la ventana */
+        }
+        .item {
+          background-color: rgb(245, 104, 245);
+          color: rgb(0, 0, 0);
+          padding: 20px;
+          margin: 25px;
+          text-align: center;
+        }
+        .text-centrado {
+                   text-align: center;
+        }
+        .texto-grande {
+             font-size: 24px;
+        }
+        
+              
+      </style>
+      </head>
+      <body>
+       
 
-    <p> Este sistema está diseñado para facilitar el acceso a equipos tecnológicos 
-        dentro de la institución CESDE,garantizando un uso responsable y equitativo.</p>
+      
+        <div class="header">
+          <div class="Logo">
+            <img src="https://lgoenaga.github.io/edutechcesde/img/logo-cesde-blanco-sin-fondov2.png">
+          </div>
+          <p class="texto-grande"><strong>Bienvendio a nuestro sitio web. Date la oportunidad a un nuevo Futuro</strong></p>
+        </div>
+      
+        <nav class="sticky-nav"> 
+                    
+              | <a href="./inicio.html">Inicio</a>|
+                <a href="./Servicio.html">Servicio</a>|
+                <a href="./blog.html">Blog</a>|
+                <a href="./contacto.html">Contacto</a>|
+                <a href="./ubicacion.html">Ubicacion</a>|
+                
+                <button type="submit" onclik=a href="formulario.html">Iniciar Sesion</button>
+            </ul>
+          </nav> 
+      
+        <div class="content">
+        <div class="caja-bloque">
+       
+        
+        
 
-     <h2> Reglas y Políticas de Préstamo </h2>
+            <h1> Bienvenido al Sistema de Préstamo de Equipos de Cómputo </h1>
 
-     <li>Los equipos solo pueden ser prestados y 
-        utilizados dentro de las instalaciones de la institución CESDE.</li>
-    <li> Solo pueden solicitar préstamos personas 
-        activas con vínculo laboral o estudiantil en la institución.</li>
-    <li> El préstamo de equipos tiene un límite de 3 horas por solicitud.</li>
-    <li> Si el equipo se entrega después del tiempo establecido, 
-        el usuario será suspendido por 1 mes después de la tercera infracción.</li>
+            <p class="texto-grande"> Este sistema está diseñado para facilitar el acceso a equipos tecnológicos 
+                dentro de la institución CESDE,garantizando un uso responsable y equitativo.</p>
+        
+             <h1> Reglas y Políticas de Préstamo </h1>
+        
+             <li class="texto-grande">equipos solo pueden ser prestados y utilizados dentro de las instalaciones de la institución CESDE.</li>
+             <li class="texto-grande">Solo pueden solicitar préstamos personas activas con vínculo laboral o estudiantil en la institución.</li>
+             <li class="texto-grande"> El préstamo de equipos tiene un límite de 3 horas por solicitud.</li>
+             <li class="texto-grande"> Si el equipo se entrega después del tiempo establecido, el usuario será suspendido por 1 mes después de la tercera infracción.</li>
+            
+            <div class="contenedor-align-content">
 
-   
+            <div class="item">
+            <img src="https://lgoenaga.github.io/edutechcesde/img/herramientas-ofimaticas.jpg"
+            width="150">
+            </div>
+            <div class="item">
+            <img src="https://lgoenaga.github.io/edutechcesde/img/Contacto-cesde.jpg"
+            width="145">
+            </div>
+            <div class="item">
+            <img src="https://lgoenaga.github.io/edutechcesde/img/desarrollo-software-cesde.jpg"
+            width="150">
+            </div>
+            <div class="item">
+            <img src="https://lgoenaga.github.io/edutechcesde/img/Diseno-grafico-cesde.jpg"
+            width="150"> 
+        </div> 
+            </div>
+             <footer>
+                <p class="text-centrado"> © 2023 CESDE - Todos los derechos reservados. </p>
+             </footer>
+      
+      </body>
+      </html>
+      
     
 </body>
 </html>
